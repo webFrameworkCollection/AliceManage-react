@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import App from './routes'
 import store from './store';
-import './style/ztao.scss'
+import './style/style.less';
+// import './style/ztao.scss''
 ReactDOM.render(
     <Provider store={store}>
             <App/>

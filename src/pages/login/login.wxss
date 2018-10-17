@@ -1,0 +1,30 @@
+:local(.root) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+:local(.root) .loginBox {
+  width: 60%;
+  max-width: 700px;
+}
+:local(.root) .inputBox {
+  margin-bottom: 20px;
+}
+:local(.root) .btnBox {
+  width: 100%;
+  text-align: center;
+}
+:local(.root) .btn-primary {
+  width: 60%;
+  max-width: 250px;
+}
+:local(.root) .remberPwd {
+  margin-right: 5px;
+}
+:local(.root) .forgotPwd {
+  float: right;
+}

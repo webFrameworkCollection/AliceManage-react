@@ -3,56 +3,17 @@
  */
 import {combineReducers} from "redux"
 import {List,fromJS} from "immutable";
+import { menuList } from './menu'
 
 
-//首页得文字
-export function red_index_tit (state = '上面一旦重新填我就变了', action) {
-    switch (action.type) {
-        case "INDEX_TIT":
-            return action.data;
-            break;
-        default:
-            return state
+export function mapstate(state) {
+    return{
+        menuList:state.menuList
     }
 }
-//标题
-export function red_head_tit (state = 'react_home', action) {
-    switch (action.type) {
-        default:
-            return state
-    }
-}
-export function red_list(state = [{
-    "id":1,
-    "name":"饼小贱",
-},{
-    "id":1,
-    "name":"Alice",
-},{
-    "id":1,
-    "name":"Jermine",
-},{
-    "id":1,
-    "name":"Hello",
-},{
-    "id":1,
-    "name":"blue",
-},{
-    "id":1,
-    "name":"ps",
-}], action){
-    switch (action.type) {
-        case 'LIST':
-            return action.data;
-            break;
-        default:
-            return state
-    }
-}
+
 const rootReducer = combineReducers({
-    red_index_tit,
-    red_head_tit,
-    red_list
+    menuList
 })
 
 export default rootReducer

@@ -1,0 +1,52 @@
+:local(.root) .happyTime {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+:local(.root) .happyTime img {
+  height: 100%;
+  width: 100%;
+}
+:local(.root) .happyTimeDesc {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:local(.root) .tipMessage {
+  height: 355px;
+  display: flex;
+  flex-direction: row;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+:local(.root) .calenText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:local(.root) .ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-month,
+:local(.root) .ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-date {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+:local(.root) .ant-fullcalendar-fullscreen .ant-fullcalendar-date,
+:local(.root) .ant-fullcalendar-fullscreen .ant-fullcalendar-month {
+  color: #fff;
+}
+:local(.root) .ant-fullcalendar-value,
+:local(.root) .ant-badge-status-text,
+:local(.root) .ant-fullcalendar {
+  color: #fff;
+}
+:local(.root) .ant-fullcalendar-fullscreen .ant-fullcalendar-today .ant-fullcalendar-value {
+  color: #ad59ff;
+}
+:local(.root) .ant-fullcalendar-fullscreen .ant-fullcalendar-date:hover,
+:local(.root) .ant-fullcalendar-fullscreen .ant-fullcalendar-month:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+:local(.root) {
+  .happyTime{
+    width: 100%;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+    
+  }
+  .happyTimeDesc{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.1);
+    overflow:hidden; //超出的文本隐藏
+text-overflow:ellipsis; //溢出用省略号显示
+white-space:nowrap; //溢出不换行
+  }
+  .tipMessage{
+    height: 355px;
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .calenText{
+    overflow:hidden; //超出的文本隐藏
+    text-overflow:ellipsis; //溢出用省略号显示
+    white-space:nowrap; //溢出不换行
+  }
+  .ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-month, .ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-date{
+    background-color: rgba(255,255,255,0.1);
+  }
+  .ant-fullcalendar-fullscreen .ant-fullcalendar-date, .ant-fullcalendar-fullscreen .ant-fullcalendar-month{
+    color: #fff;
+   
+  }
+  .ant-fullcalendar-value,.ant-badge-status-text,.ant-fullcalendar{
+    color: #fff;
+  }
+  .ant-fullcalendar-fullscreen .ant-fullcalendar-today .ant-fullcalendar-value{
+    color: #ad59ff;
+  }
+  .ant-fullcalendar-fullscreen .ant-fullcalendar-date:hover, .ant-fullcalendar-fullscreen .ant-fullcalendar-month:hover {
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+}

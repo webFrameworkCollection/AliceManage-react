@@ -1,0 +1,6 @@
+:local(.root) {
+  padding: 20px;
+}
+:local(.root) .btn {
+  margin-right: 10px;
+}

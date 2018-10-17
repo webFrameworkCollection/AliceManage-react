@@ -75,7 +75,7 @@ module.exports = {
         alias: {
             "actions": path.resolve(__dirname, "src/actions"),
             "components": path.resolve(__dirname, "src/components"),
-            "containers": path.resolve(__dirname, "src/containers"),
+            "pages": path.resolve(__dirname, "src/pages"),
             "reducers": path.resolve(__dirname, "src/reducers"),
             "utils": path.resolve(__dirname, "src/utils")
         }
@@ -106,7 +106,11 @@ module.exports = {
                 options: {
                     minimize: true //css压缩
                 }
-            }, {loader: 'less-loader', options: {javascriptEnabled: true}}]
+            }, {loader: 'less-loader', options: {
+                modifyVars: {
+                             'primary-color': '#ad59ff',
+                          },
+                javascriptEnabled: true}}]
         }, {
             test: /\.(png|jpg|gif|md)$/,
             use: ['file-loader?limit=10000&name=[md5:hash:base64:10].[ext]']
